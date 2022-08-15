@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,52 +8,44 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <LinearLayout
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="UserID   "
             android:textSize="20sp"
             android:layout_margin="10sp"/>
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="ID"
             android:textSize="20sp"
             android:layout_margin="10sp"
             android:inputType="number"/>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="UserPW"
             android:textSize="20sp"
             android:layout_margin="10sp"/>
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="PW"
             android:textSize="20sp"
             android:layout_margin="10sp"
             android:inputType="textPassword"/>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Login in"
             android:textSize="20sp"
             android:layout_margin="15sp"/>
-    </LinearLayout>
+    </TableRow>
 
-
-</LinearLayout>
+</TableLayout>
